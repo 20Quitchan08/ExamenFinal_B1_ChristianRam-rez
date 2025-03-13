@@ -37,6 +37,9 @@ namespace ExamenFinal_B1_ChristianRamírez
             this.txtNumero1 = new System.Windows.Forms.TextBox();
             this.txtNumero2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNumero3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +54,8 @@ namespace ExamenFinal_B1_ChristianRamírez
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(441, 43);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(235, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 23);
             this.label2.TabIndex = 1;
@@ -60,6 +64,7 @@ namespace ExamenFinal_B1_ChristianRamírez
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label3.Location = new System.Drawing.Point(76, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 23);
@@ -68,6 +73,7 @@ namespace ExamenFinal_B1_ChristianRamírez
             // 
             // txtNumero1
             // 
+            this.txtNumero1.BackColor = System.Drawing.Color.LightGreen;
             this.txtNumero1.Location = new System.Drawing.Point(80, 95);
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(109, 31);
@@ -76,7 +82,8 @@ namespace ExamenFinal_B1_ChristianRamírez
             // 
             // txtNumero2
             // 
-            this.txtNumero2.Location = new System.Drawing.Point(428, 95);
+            this.txtNumero2.BackColor = System.Drawing.Color.Yellow;
+            this.txtNumero2.Location = new System.Drawing.Point(239, 95);
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(109, 31);
             this.txtNumero2.TabIndex = 4;
@@ -84,7 +91,9 @@ namespace ExamenFinal_B1_ChristianRamírez
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(227, 218);
+            this.button1.BackgroundImage = global::ExamenFinal_B1_ChristianRamírez.Properties.Resources.icons8_hacking_96;
+            this.button1.ForeColor = System.Drawing.Color.Snow;
+            this.button1.Location = new System.Drawing.Point(226, 224);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 54);
             this.button1.TabIndex = 5;
@@ -92,12 +101,41 @@ namespace ExamenFinal_B1_ChristianRamírez
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(398, 43);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 23);
+            this.label4.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label5.Location = new System.Drawing.Point(393, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 23);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Numero 3";
+            // 
+            // txtNumero3
+            // 
+            this.txtNumero3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.txtNumero3.Location = new System.Drawing.Point(397, 95);
+            this.txtNumero3.Name = "txtNumero3";
+            this.txtNumero3.Size = new System.Drawing.Size(108, 31);
+            this.txtNumero3.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(618, 409);
+            this.Controls.Add(this.txtNumero3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtNumero2);
             this.Controls.Add(this.txtNumero1);
@@ -127,6 +165,9 @@ namespace ExamenFinal_B1_ChristianRamírez
         private System.Windows.Forms.TextBox txtNumero1;
         private System.Windows.Forms.TextBox txtNumero2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtNumero3;
     }
 }
 

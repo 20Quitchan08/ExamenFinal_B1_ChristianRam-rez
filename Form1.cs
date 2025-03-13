@@ -37,20 +37,58 @@ namespace ExamenFinal_B1_ChristianRamírez
 
     
         }
+        private void txtNumero3_TextChanged(object sender, EventArgs e)
+        {
+
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if ((int.TryParse(txtNumero1.Text, out int txtNum1))&&((int.TryParse(txtNumero2.Text, out int txtNum2))))
+            if (((int.TryParse(txtNumero1.Text, out int txtNum1)) && ((int.TryParse(txtNumero2.Text, out int txtNum2)))) && ((int.TryParse(txtNumero3.Text, out int txtNum3))))
             {
-                if (txtNum1 > txtNum2)
+                if ((txtNum1 > txtNum2) && (txtNum2 > txtNum3))
                 {
-                    MessageBox.Show(txtNum1 + ">" +  txtNum2);
+                    MessageBox.Show(txtNum1 + ">" + txtNum2 + ">" + txtNum3);
                 }
-
-
-
+                else if ((((txtNum1 == txtNum2) && (txtNum2 > txtNum3))))
+                {
+                    MessageBox.Show(txtNum1 + "=" + txtNum2 + ">" + txtNum3);
+                }
+                else if ((txtNum1 > txtNum2) && (txtNum2 == txtNum3))
+                {
+                    MessageBox.Show(txtNum1 + ">" + txtNum2 + "=" + txtNum3);
+                }
+                else if ((txtNum1 < txtNum2) && (txtNum2 == txtNum3))
+                {
+                    MessageBox.Show(txtNum1 + "<" + txtNum2 + "=" + txtNum3);
+                }
+                else if ((txtNum1 == txtNum2) && (txtNum2 < txtNum3))
+                {
+                    MessageBox.Show(txtNum1 + "=" + txtNum2 + "<" + txtNum3);
+                }
+                else if ((txtNum1 < txtNum2) && (txtNum2 > txtNum3))
+                {
+                    MessageBox.Show(txtNum1 + "<" + txtNum2 + ">" + txtNum3);
+                }
+                else if ((txtNum1 > txtNum2) && (txtNum2 < txtNum3))
+                {
+                    MessageBox.Show(txtNum1 + ">" + txtNum2 + "<" + txtNum3);
+                }
+                else if ((txtNum1 == txtNum2) && ( txtNum2 == txtNum3))
+                {
+                    MessageBox.Show(txtNum1 + "=" + txtNum2 + "=" + txtNum3);
+                }
+                else
+                {
+                    MessageBox.Show(txtNum1 + "<" + txtNum2 + "<" + txtNum3); 
+                }
+                
             }
-
+            else
+            {
+                MessageBox.Show("Ingrese un número valido :) ");
+            }
 
 
         }
