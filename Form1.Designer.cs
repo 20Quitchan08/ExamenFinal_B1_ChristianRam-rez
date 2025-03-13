@@ -3,7 +3,7 @@ using System;
 
 namespace ExamenFinal_B1_ChristianRamírez
 {
-    partial class Form1
+    partial class ExamenB1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -31,6 +31,7 @@ namespace ExamenFinal_B1_ChristianRamírez
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamenB1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -127,7 +128,7 @@ namespace ExamenFinal_B1_ChristianRamírez
             this.txtNumero3.Size = new System.Drawing.Size(108, 31);
             this.txtNumero3.TabIndex = 8;
             // 
-            // Form1
+            // ExamenB1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,9 +144,10 @@ namespace ExamenFinal_B1_ChristianRamírez
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ExamenB1";
+            this.Text = "Examen Bloque 1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

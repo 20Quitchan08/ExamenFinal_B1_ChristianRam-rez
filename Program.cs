@@ -16,7 +16,7 @@ namespace ExamenFinal_B1_ChristianRamírez
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ExamenB1());
         }
     }
 }
